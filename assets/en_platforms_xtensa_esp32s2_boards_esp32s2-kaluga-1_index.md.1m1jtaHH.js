@@ -1,0 +1,94 @@
+import{_ as a,c as t,al as o,o as n}from"./chunks/framework.NFAqBSgQ.js";const i="/assets/esp32-s2-kaluga-1-kit-v1.0-3d.aPBpU5nu.png",s="/assets/esp32-s2-kaluga-1-v1.2-block-diagram.C6fU30k7.png",r="/assets/esp32s2-kaluga-1-v1.3-3d.CH9riX0U.png",f=JSON.parse('{"title":"ESP32-S2-Kaluga-1 Kit v1.3","description":"","frontmatter":{},"headers":[],"relativePath":"en/platforms/xtensa/esp32s2/boards/esp32s2-kaluga-1/index.md","filePath":"en/platforms/xtensa/esp32s2/boards/esp32s2-kaluga-1/index.md"}'),l={name:"en/platforms/xtensa/esp32s2/boards/esp32s2-kaluga-1/index.md"};function d(p,e,c,h,u,m){return n(),t("div",null,e[0]||(e[0]=[o('<h1 id="esp32-s2-kaluga-1-kit-v1-3" tabindex="-1">ESP32-S2-Kaluga-1 Kit v1.3 <a class="header-anchor" href="#esp32-s2-kaluga-1-kit-v1-3" aria-label="Permalink to &quot;ESP32-S2-Kaluga-1 Kit v1.3&quot;">​</a></h1><p>chip:esp32, chip:esp32s2</p><p>The <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-esp32-s2-kaluga-1-kit.html" target="_blank" rel="noreferrer">ESP32-S2-Kaluga-1 kit v1.3</a> is a development kit by Espressif that is mainly created to:</p><ul><li>Demonstrate the ESP32-S2&#39;s human-computer interaction functionalities</li><li>Provide the users with the tools for development of human-computer interaction applications based on the ESP32-S2</li></ul><p>There are many ways of how the ESP32-S2&#39;s abundant functionalities can be used. For starters, the possible use cases may include:</p><ul><li><strong>Smart home</strong>: From simplest smart lighting, smart door locks, smart sockets, to video streaming devices, security cameras, OTT devices, and home appliances</li><li><strong>Battery-powered equipment</strong>: Wi-Fi mesh sensor networks, Wi-Fi-networked toys, wearable devices, health management equipment</li><li><strong>Industrial automation equipment</strong>: Wireless control and robot technology, intelligent lighting, HVAC control equipment, etc.</li><li><strong>Retail and catering industry</strong>: POS machines and service robots</li></ul><p><img src="'+i+`" alt="ESP32-S2-Kaluga-1-Kit Overview (click to
+enlarge)">{.align-centeralign-center width=&quot;690px&quot; height=&quot;318px&quot;}</p><p>The ESP32-S2-Kaluga-1 kit consists of the following boards:</p><ul><li>Main board: <em>ESP32-S2-Kaluga-1</em></li><li>Extension boards: <ul><li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-esp-lyrat-8311a_v1.3.html" target="_blank" rel="noreferrer">ESP-LyraT-8311A</a> - Audio player</li><li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-esp-lyrap-toucha-v1.1.html" target="_blank" rel="noreferrer">ESP-LyraP-TouchA</a> - Touch buttons</li><li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-esp-lyrap-lcd32-v1.2.html" target="_blank" rel="noreferrer">ESP-LyraP-LCD32</a> - 3.2&quot; LCD screen</li><li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-esp-lyrap-cam-v1.1.html" target="_blank" rel="noreferrer">ESP-LyraP-CAM</a> - Camera module</li></ul></li></ul><p>A block diagram below shows the components of the ESP32-S2-Kaluga-1 and their interconnections.</p><p><img src="`+s+`" alt="ESP32-S2-Kaluga-1 block
+diagram" class="align-centeralign-center"></p><h2 id="features" tabindex="-1">Features <a class="header-anchor" href="#features" aria-label="Permalink to &quot;Features&quot;">​</a></h2><p>The ESP32-S2-Kaluga-1 main board is the heart of the kit. It integrates the ESP32-S2-WROVER module and all the connectors for extension boards. This board is the key tool in prototyping human-computer interaction interfaces.</p><p>The ESP32-S2-Kaluga-1 board has connectors for boards with:</p><ul><li>Extension header (ESP-LyraT-8311A, ESP-LyraP-LCD32)</li><li>Camera header (ESP-LyraP-CAM)</li><li>Touch FPC connector (ESP-LyraP-TouchA)</li><li>LCD FPC connector (no official extension boards yet)</li><li>I2C FPC connector (no official extension boards yet)</li></ul><p><img src="`+r+`" alt="ESP32-S2-Kaluga-1 (click to
+enlarge)">{.align-centeralign-center width=&quot;772px&quot; height=&quot;584px&quot;}</p><p>All the four extension boards are specially designed to support the following features:</p><ul><li></li></ul><pre><code>Touch panel control
+
+:   -   Six touch buttons
+    -   Supports acrylic panels up to 5 mm
+    -   Wet hand operation
+    -   Water rejection, ESP32-S2 can be configured to disable all
+        touchpads automatically if multiple pads are simultaneously
+        covered with water and to re-enable touchpads if the water
+        is removed
+</code></pre><ul><li></li></ul><pre><code>Audio playback
+
+:   -   Connect speakers to play audio
+    -   Use together with the Touch panel to control audio playback
+        and adjust volume
+</code></pre><ul><li></li></ul><pre><code>LCD display
+
+:   -   LCD interface (8-bit parallel RGB, 8080, and 6800 interface)
+</code></pre><ul><li></li></ul><pre><code>Camera image acquisition
+
+:   -   Supports OV2640 and OV3660 camera modules
+    -   8-bit DVP image sensor interface (ESP32-S2 also supports
+        16-bit DVP image sensors, you can design it yourself)
+    -   Clock frequency up to 40 MHz
+    -   Optimized DMA transmission bandwidth for easier transmission
+        of high-resolution images
+</code></pre><h3 id="compatibility-of-extension-boards" tabindex="-1">Compatibility of Extension Boards <a class="header-anchor" href="#compatibility-of-extension-boards" aria-label="Permalink to &quot;Compatibility of Extension Boards&quot;">​</a></h3><p>If you want to use more than one extension board at the same time, please check the table given below.</p><hr><p>Boards Used HW Conflict Limitations Solution</p><hr><p>8311A v1.3 + I2S Controller ESP32-S2 has only one Utilize time division CAM v1.1 I2S interface. But both multiple access, or extension boards use a different audio require connection via module that can be the ESP32-S2&#39;s I2S connected via other interface (LyraT-8311A GPIOs or DAC. in Standard mode,<br> ESP-LyraP-CAM in Camera mode).</p><p>TouchA v1.1 + IO11, IO6 Touch actions cannot be Do not initialize IO11 LCD32 v1.2 triggered because of (NETWORK) for your the multiplexed pin ESP-LyraP-TouchA, or IO11. ESP-LyraP-LCD32 configure the BLCT pin will not be affected to [-1]{.title-ref} (= because its BLCT pin do not use BLCT) for will be disconnected your ESP-LyraP-LCD32. from IO6.</p><p>8311A v1.3 + IO6 BLCT pin of Configure the BK pin LCD32 v1.2 ESP32-S2-Kaluga-1 will to [-1]{.title-ref} (= be disconnected from do not use BLCT) for IO6. your ESP-LyraP-LCD32.</p><p>TouchA v1.1 + Pin BT_ADC on This pin is required If you plan to use 8311A v1.3 ESP-LyraT-8311A for initialization of buttons on the six button on ESP-LyraT-8311A, do ESP-LyraT-8311A. At the not initialize pin IO6 same time, (PHOTO) for your ESP-LyraP-TouchA needs ESP-LyraP-TouchA. this pin for its touch<br> actions.</p><p>TouchA v1.1 + IO1, IO2, IO3 Cannot be used For ESP-LyraP-TouchA, CAM v1.1 simultaneously because do not initialize IO1 of the mentioned (VOL_UP), IO2 (PLAY), multiplexed pins. and IO3 (VOL_DOWN).</p><p>TouchA v1.1 + IO1, IO2, IO3, Conflicts on the For ESP-LyraP-TouchA, LCD32 v1.2 + IO11 mentioned multiplexed do not initialize IO1 CAM v1.1 pins. (VOL_UP), IO2 (PLAY), IO3 (VOL_DOWN), and IO11 (NETWORK).</p><h2 id="toucha-v1-1-io6-io11-if-esp-lyrat-8311a-s-do-not-initialize-io11lcd32-v1-2-pin-bt-adc-is-used-to-network-for-your8311a-v1-3-initialize-the-board-s-esp-lyrap-toucha-six-buttons-io6-and-also-if-you-need-toio11-will-not-be-use-bt-adc-do-notavailable-for-the-other-initialize-io6boards-photo" tabindex="-1">TouchA v1.1 + IO6, IO11 If ESP-LyraT-8311A&#39;s Do not initialize IO11 LCD32 v1.2 + pin BT_ADC is used to (NETWORK) for your 8311A v1.3 initialize the board&#39;s ESP-LyraP-TouchA. six buttons, IO6 and Also, if you need to IO11 will not be use BT_ADC, do not available for the other initialize IO6 boards. (PHOTO). <a class="header-anchor" href="#toucha-v1-1-io6-io11-if-esp-lyrat-8311a-s-do-not-initialize-io11lcd32-v1-2-pin-bt-adc-is-used-to-network-for-your8311a-v1-3-initialize-the-board-s-esp-lyrap-toucha-six-buttons-io6-and-also-if-you-need-toio11-will-not-be-use-bt-adc-do-notavailable-for-the-other-initialize-io6boards-photo" aria-label="Permalink to &quot;TouchA v1.1 +  IO6, IO11         If ESP-LyraT-8311A\\&#39;s   Do not initialize IO11
+  LCD32 v1.2 +                     pin BT\\_ADC is used to  (NETWORK) for your
+  8311A v1.3                       initialize the board\\&#39;s ESP-LyraP-TouchA.
+                                   six buttons, IO6 and    Also, if you need to
+                                   IO11 will not be        use BT\\_ADC, do not
+                                   available for the other initialize IO6
+                                   boards.                 (PHOTO).&quot;">​</a></h2><p>Also, all extension boards and the JTAG interface share the same pins IO39, IO40, IO41 and IO42. For this reason, the following may disturb the JTAG operation:</p><ul><li>Plugging in any extension board</li><li>Debugging an application that is using an extension board</li></ul><h2 id="serial-console" tabindex="-1">Serial Console <a class="header-anchor" href="#serial-console" aria-label="Permalink to &quot;Serial Console&quot;">​</a></h2><p>UART0 is, by default, the serial console. It connects to the on-board CP2102 converter and is available on the micro-USB connector (J1).</p><p>It will show up as /dev/ttyUSB[n] where [n] will probably be 0.</p><h2 id="buttons-and-leds" tabindex="-1">Buttons and LEDs <a class="header-anchor" href="#buttons-and-leds" aria-label="Permalink to &quot;Buttons and LEDs&quot;">​</a></h2><h3 id="board-buttons" tabindex="-1">Board Buttons <a class="header-anchor" href="#board-buttons" aria-label="Permalink to &quot;Board Buttons&quot;">​</a></h3><p>There are two buttons labeled Boot and EN. The EN button is not available to the software. It pulls the chip enable line that doubles as a reset line.</p><p>The BOOT button is connected to IO0. On reset, it is used as a strapping pin to determine whether the chip boots normally or into the serial bootloader. After resetting, however, the BOOT button can be used for software input.</p><h3 id="board-leds" tabindex="-1">Board LEDs <a class="header-anchor" href="#board-leds" aria-label="Permalink to &quot;Board LEDs&quot;">​</a></h3><p>There are many on-board LEDs. The only one that can be controlled by software is a WS2812 RGB LED (U21) addressable LED and is driven by GPIO45.</p><h2 id="configurations" tabindex="-1">Configurations <a class="header-anchor" href="#configurations" aria-label="Permalink to &quot;Configurations&quot;">​</a></h2><p>All of the configurations presented below can be tested by running the following commands:</p><pre><code> ./tools/configure.sh esp32s2-kaluga-1:&lt;config_name&gt;
+ make flash ESPTOOL_PORT=/dev/ttyUSB1 -j
+</code></pre><p>Where &lt;config_name&gt; is the name of board configuration you want to use, i.e.: nsh, buttons, wifi... Then use a serial console terminal like <code>picocom</code> configured to 115200 8N1.</p><h3 id="audio" tabindex="-1">audio <a class="header-anchor" href="#audio" aria-label="Permalink to &quot;audio&quot;">​</a></h3><p>This configuration uses the I2S peripheral and the ES8311 audio codec to play an audio file. The easiest way of playing an uncompressed file is embedding into the firmware. This configuration selects <a href="https://github.com/apache/nuttx-apps/tree/master/examples/romfs" target="_blank" rel="noreferrer">romfs example</a> to allow that.</p><p><strong>ROMFS example</strong></p><p>Prepare and build the <code>audio</code> defconfig:</p><pre><code> make -j distclean &amp;&amp; ./tools/configure.sh esp32s2-kaluga-1:audio &amp;&amp; make
+</code></pre><p>This will create a temporary folder in <code>apps/examples/romfs/testdir</code>. Move a PCM-encoded (<code>.wav</code>) audio file with 16 or 24 bits/sample (sampled at 16~48kHz) to this folder.</p><p>Note</p><p>You can use <code>this 440 Hz sinusoidal tone &lt;../esp32s2-saola-1/tone.wav&gt;</code>{.interpreted-text role=&quot;download&quot;}. The audio file should be located at <code>apps/examples/romfs/testdir/tone.wav</code></p><p>Build the project again and flash it (make sure not to clean it, just build)</p><p>After successfully built and flashed, load the romfs and play it:</p><pre><code>nsh&gt; romfs
+nsh&gt; nxplayer
+nxplayer&gt; play /usr/share/local/tone.wav
+</code></pre><h3 id="buttons" tabindex="-1">buttons <a class="header-anchor" href="#buttons" aria-label="Permalink to &quot;buttons&quot;">​</a></h3><p>This configuration shows the use of the buttons subsystem. It can be used by executing the <code>buttons</code> application and pressing on any of the available board buttons and touch pads:</p><pre><code>nsh&gt; buttons
+buttons_main: Starting the button_daemon
+buttons_main: button_daemon started
+button_daemon: Running
+button_daemon: Opening /dev/buttons
+button_daemon: Supported BUTTONs 0x7f
+nsh&gt; Sample = 32
+Sample = 0
+Sample = 2
+Sample = 0
+Sample = 4
+Sample = 0
+Sample = 8
+Sample = 0
+Sample = 16
+Sample = 0
+Sample = 64
+Sample = 0
+</code></pre><h3 id="i2c" tabindex="-1">i2c <a class="header-anchor" href="#i2c" aria-label="Permalink to &quot;i2c&quot;">​</a></h3><p>This configuration can be used to scan and manipulate I2C devices. You can scan for all I2C devices using the following command:</p><pre><code>nsh&gt; i2c dev 0x00 0x7f
+</code></pre><p>To use slave mode, you can enable [ESP32S2_I2S_ROLE_SLAVE]{.title-ref} option. To use slave mode driver following snippet demonstrates how write to i2c bus using slave driver:</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>#define ESP_I2C_SLAVE_PATH  &quot;/dev/i2cslv0&quot;</span></span>
+<span class="line"><span>int main(int argc, char *argv[])</span></span>
+<span class="line"><span>  {</span></span>
+<span class="line"><span>    int i2c_slave_fd;</span></span>
+<span class="line"><span>    int ret;</span></span>
+<span class="line"><span>    uint8_t buffer[5] = {0xAA};</span></span>
+<span class="line"><span>    i2c_slave_fd = open(ESP_I2C_SLAVE_PATH, O_RDWR);</span></span>
+<span class="line"><span>    ret = write(i2c_slave_fd, buffer, 5);</span></span>
+<span class="line"><span>    close(i2c_slave_fd);</span></span>
+<span class="line"><span> }</span></span></code></pre></div><h3 id="lvgl-ili9341" tabindex="-1">lvgl_ili9341 <a class="header-anchor" href="#lvgl-ili9341" aria-label="Permalink to &quot;lvgl\\_ili9341&quot;">​</a></h3><p>This is a demonstration of the LVGL graphics library running on the NuttX LCD driver with the ILI9341 display. You can find LVGL here:</p><pre><code>https://www.lvgl.io/
+https://github.com/lvgl/lvgl
+</code></pre><p>This configuration uses the LVGL demonstration at <code>apps/examples/lvgldemo</code> and can be executed by running the <code>lvgldemo</code> application.</p><h3 id="lvgl-st7789" tabindex="-1">lvgl_st7789 <a class="header-anchor" href="#lvgl-st7789" aria-label="Permalink to &quot;lvgl\\_st7789&quot;">​</a></h3><p>This is a demonstration of the LVGL graphics library running on the NuttX LCD driver with the ST7799 display. You can find LVGL here:</p><pre><code>https://www.lvgl.io/
+https://github.com/lvgl/lvgl
+</code></pre><p>This configuration uses the LVGL demonstration at <code>apps/examples/lvgldemo</code> and can be executed by running the <code>lvgldemo</code> application.</p><h3 id="nsh" tabindex="-1">nsh <a class="header-anchor" href="#nsh" aria-label="Permalink to &quot;nsh&quot;">​</a></h3><p>Basic NuttShell configuration (console enabled in UART0, exposed via USB connection by means of CP2102 converter, at 115200 bps).</p><h3 id="nxlooper" tabindex="-1">nxlooper <a class="header-anchor" href="#nxlooper" aria-label="Permalink to &quot;nxlooper&quot;">​</a></h3><p>The <code>nxlooper</code> application captures data from the audio device with receiving capabilities and forwards the audio data frame to the audio device with transmitting capabilities.</p><p>After successfully built and flashed, run on the boards&#39; terminal:</p><pre><code>nsh&gt; nxlooper
+nxlooper&gt; loopback
+</code></pre><p>Note</p><p><code>loopback</code> command default arguments for the channel configuration, the data width and the sample rate are, respectively, 2 channels, 16 bits/sample and 48KHz. These arguments can be supplied to select different audio formats, for instance:</p><p>nxlooper&gt; loopback 2 8 44100</p><h3 id="rtc" tabindex="-1">rtc <a class="header-anchor" href="#rtc" aria-label="Permalink to &quot;rtc&quot;">​</a></h3><p>This configuration demonstrates the use of the RTC driver through alarms. You can set an alarm, check its progress and receive a notification after it expires:</p><pre><code>nsh&gt; alarm 10
+alarm_daemon started
+alarm_daemon: Running
+Opening /dev/rtc0
+Alarm 0 set in 10 seconds
+nsh&gt; alarm -r
+Opening /dev/rtc0
+Alarm 0 is active with 10 seconds to expiration
+nsh&gt; alarm_daemon: alarm 0 received
+</code></pre><h3 id="twai" tabindex="-1">twai <a class="header-anchor" href="#twai" aria-label="Permalink to &quot;twai&quot;">​</a></h3><p>This configuration enables the support for the TWAI (Two-Wire Automotive Interface) driver. You can test it by connecting TWAI RX and TWAI TX pins which are GPIO0 and GPIO2 by default to a external transceiver or connecting TWAI RX to TWAI TX pin by enabling the <code>Device Drivers -&gt; CAN Driver Support -&gt; CAN loopback mode</code> option and running the <code>can</code> example:</p><pre><code>nsh&gt; can
+nmsgs: 0
+min ID: 1 max ID: 2047
+Bit timing:
+  Baud: 1000000
+  TSEG1: 15
+  TSEG2: 4
+    SJW: 3
+  ID:    1 DLC: 1
+</code></pre><h3 id="watchdog" tabindex="-1">watchdog <a class="header-anchor" href="#watchdog" aria-label="Permalink to &quot;watchdog&quot;">​</a></h3><p>This config test the watchdog timers. It includes the 2 MWDTs, adds driver support, registers the WDTs as devices and includes the watchdog example.</p><p>To test it, just run the following:</p><pre><code>nsh&gt; wdog -i /dev/watchdogx
+</code></pre><p>Where x is the watchdog instance.</p><p>To test the XTWDT(/dev/watchdog3) an interrupt handler needs to be implemented because XTWDT does not have system reset feature. To implement an interrupt handler [WDIOC_CAPTURE]{.title-ref} command can be used. When interrupt rises, XTAL32K clock can be restored with [WDIOC_RSTCLK]{.title-ref} command.</p>`,100)]))}const g=a(l,[["render",d]]);export{f as __pageData,g as default};
