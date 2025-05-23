@@ -1,0 +1,1 @@
+import{_ as n,c as t,al as a,o}from"./chunks/framework.NFAqBSgQ.js";const u=JSON.parse('{"title":"FAQ","description":"","frontmatter":{},"headers":[],"relativePath":"en/faq/index.md","filePath":"en/faq/index.md"}'),i={name:"en/faq/index.md"};function r(s,e,l,p,d,c){return o(),t("div",null,e[0]||(e[0]=[a("",56)]))}const m=n(i,[["render",r]]);export{u as __pageData,m as default};
